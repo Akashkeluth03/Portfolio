@@ -1,23 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { ProjectsDirectory } from './components/ProjectsDirectory';
-import { AudioDeepfakeLab } from './components/AudioDeepfakeLab';
-import { CatchMyDreamSimulator } from './components/CatchMyDreamSimulator';
-import { DevOpsPipelineRunner } from './components/DevOpsPipelineRunner';
-import { TechStackExplorer } from './components/TechStackExplorer';
-import { GithubProfileStudio } from './components/GithubProfileStudio';
-import { ContactModal } from './components/ContactModal';
+import { About } from './components/About';
+import { Skills } from './components/Skills';
+import { Projects } from './components/Projects';
+import { GitHub } from './components/GitHub';
+import { Education } from './components/Education';
+import { Achievements } from './components/Achievements';
+import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
 export default function App() {
-  const [isContactOpen, setIsContactOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('projects');
+  const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['projects', 'audio-lab', 'catch-my-dream', 'devops-runner', 'tech-stack', 'github-studio'];
-      const scrollPosition = window.scrollY + 200;
+      const sections = ['about', 'skills', 'projects', 'github', 'education', 'achievements', 'contact'];
+      const scrollPosition = window.scrollY + 220;
 
       for (const sectionId of sections) {
         const el = document.getElementById(sectionId);
@@ -36,58 +35,32 @@ export default function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollTo = (id: string) => {
-    const el = document.getElementById(id);
+  const handleScrollToProjects = () => {
+    const el = document.getElementById('projects');
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
-  const handleSelectProjectDemo = (demoType: 'deepfake' | 'catchmydream' | 'devops') => {
-    if (demoType === 'deepfake') {
-      scrollTo('audio-lab');
-    } else if (demoType === 'catchmydream') {
-      scrollTo('catch-my-dream');
-    } else if (demoType === 'devops') {
-      scrollTo('devops-runner');
-    }
-  };
-
   return (
-    <div className="min-h-screen bg-neutral-950 text-neutral-100 flex flex-col font-sans selection:bg-cyan-500/30 selection:text-cyan-200">
-      <Navbar 
-        onOpenContact={() => setIsContactOpen(true)}
-        activeSection={activeSection}
-      />
+    <div className="min-h-screen bg-neutral-950 text-neutral-100 flex flex-col font-sans selection:bg-neutral-800 selection:text-white">
+      {/* Sticky Translucent Navbar */}
+      <Navbar activeSection={activeSection} />
 
+      {/* Main Content Sections */}
       <main className="flex-1">
-        <Hero 
-          onOpenContact={() => setIsContactOpen(true)}
-          onExploreProjects={() => scrollTo('projects')}
-          onLaunchAudioLab={() => scrollTo('audio-lab')}
-        />
-
-        <ProjectsDirectory 
-          onSelectProjectDemo={handleSelectProjectDemo}
-        />
-
-        <AudioDeepfakeLab />
-
-        <CatchMyDreamSimulator />
-
-        <DevOpsPipelineRunner />
-
-        <TechStackExplorer />
-
-        <GithubProfileStudio />
+        <Hero onViewProjects={handleScrollToProjects} />
+        <About />
+        <Skills />
+        <Projects />
+        <GitHub />
+        <Education />
+        <Achievements />
+        <Contact />
       </main>
 
+      {/* Minimal Clean Footer */}
       <Footer />
-
-      <ContactModal 
-        isOpen={isContactOpen}
-        onClose={() => setIsContactOpen(false)}
-      />
     </div>
   );
 }
