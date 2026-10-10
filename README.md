@@ -1,72 +1,92 @@
-# Akash Keluth | Interactive Developer Portfolio & Engineering Showcase
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,23&height=220&section=header&text=Akash%20Keluth&fontSize=52&fontAlignY=38&desc=Information%20Science%20Engineer%20%E2%80%A2%20AI%20%26%20ML%20Practitioner%20%E2%80%A2%20Cloud%20%26%20DevOps&descAlignY=58&descSize=17" width="100%" alt="Akash Keluth Header Banner" />
+</div>
 
-[![Live Portfolio](https://img.shields.io/badge/Live%20Demo-Interactive%20Showcase-00D2FF?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ais-pre-wi62un7ktlv3umru2ojitz-213450106904.asia-east1.run.app)
-[![GitHub](https://img.shields.io/badge/GitHub-Akashkeluth03-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Akashkeluth03)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+<div align="center">
+  <a href="mailto:akashkeluth03@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+  </a>
+  <a href="https://github.com/Akashkeluth03">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <img src="https://img.shields.io/badge/MSRIT-Bangalore-0052CC?style=for-the-badge&logo=google-scholar&logoColor=white" alt="MSRIT" />
+</div>
 
-> Production-grade developer portfolio and interactive project showcase for **Akash Keluth** (Information Science & Engineering scholar at Ramaiah Institute of Technology). Features live acoustic deepfake audio analysis, full-stack student relocation simulator, automated CI/CD DevOps pipeline runner, and interactive Linux shell sandbox.
+<br/>
 
----
+# 🚀 Akash Keluth — Masterclass Interactive Portfolio
 
-## 🚀 Key Interactive Showcase Modules
-
-1. **🎙️ Deepfake Audio Detection Lab**
-   - Web Audio API acoustic synthesis generating natural human vs. neural vocoder harmonics.
-   - Real-time HTML5 Canvas spectrogram & frequency response visualizer (20Hz – 8,000Hz).
-   - Forensic acoustic extraction: 13-dimensional MFCC heatmap, LFCC spectral tilt score, pitch jitter, and spectral centroid.
-   - Multi-model machine learning inference (Random Forest, SVM, Spectral CNN) with diagnostic verdicts and confidence scoring.
-
-2. **🎓 Catch My Dream Simulator (`catchmydream1`)**
-   - Interactive university cutoff & IELTS score eligibility evaluator.
-   - Verified student housing & rental budget calculator with safety ratings.
-   - Legal student visa work allowance & part-time wage offset simulator.
-   - Public transit vs. cycling commute cost optimizer.
-
-3. **⚡ Cloud & DevOps CI/CD Pipeline Stepper**
-   - Step-by-step pipeline runner: Linting $\rightarrow$ Pytest Suites $\rightarrow$ Docker Multi-Stage Build $\rightarrow$ Trivy Security Scan $\rightarrow$ AWS ECS / Kubernetes Rollout.
-   - Interactive POSIX terminal sandbox supporting real commands (`docker ps`, `kubectl get pods`, `cat about.yml`, `python test.py`, `git status`).
-
-4. **🛠️ Technical Stack & Frameworks Explorer**
-   - Filterable catalog of Python, C/C++, React, Node.js, Docker, Kubernetes, AWS, Scikit-Learn, and Librosa with hands-on proficiency inspection and sample code.
-
-5. **📊 GitHub Profile & README Studio**
-   - Live GitHub analytics cards, streak counter, contribution snake animation, and dynamic README generator with instant clipboard export.
+Welcome to the official source repository for **Akash Keluth's Developer Portfolio**. Engineered with modern vanilla web technologies, dynamic particle constellation physics, interactive audio spectrogram simulations, real-time developer terminal CLI, and responsive glassmorphic dark-mode aesthetics.
 
 ---
 
-## 💻 Tech Stack
+## 🌟 Highlights & Features
 
-- **Frontend & UI**: React 19, TypeScript, Tailwind CSS v4, Lucide Icons, Motion
-- **Acoustic & Audio Engine**: Web Audio API, HTML5 Canvas Spectral Visualizer
-- **DevOps & Cloud**: Docker, Kubernetes, AWS (EC2/ECS), Jenkins CI/CD, Linux/Bash
-- **Data & ML**: Python, Scikit-Learn, Librosa, NumPy, SciPy
+- ⚡ **Dynamic Ambient Canvas**: Constellation particle network reacting to cursor proximity.
+- 🎙️ **Interactive Acoustic Spectrogram Analyzer**: Real-time simulated frequency visualizer for the **Deepfake Audio Detection** model (MFCC & LFCC spectral analysis).
+- 💻 **In-Browser Terminal CLI**: Interactive command sandbox (`akash@portfolio:~$`) with quick command chips.
+- 🎨 **Cyber-Luxe Glassmorphism**: Tailored gradients, custom glowing cursor, and 3D perspective card hover physics.
+- 📱 **Fully Responsive**: Optimized for ultra-wide displays down to mobile screens.
+- 🚀 **Zero Dependencies**: Pure HTML5, CSS3, and modern Vanilla JavaScript with fast loading and 100 Lighthouse performance.
 
 ---
 
-## 🛠️ Local Development & Setup
+## 🛠️ Tech Stack
+
+- **Core Structure**: Semantic HTML5 & Modern CSS3
+- **Scripting & Engine**: Vanilla JavaScript (ES6+), Canvas API, Web Audio API simulator
+- **Typography**: Space Grotesk, Plus Jakarta Sans, DM Mono
+- **Icons**: Font Awesome 6.5 & Lucide Icons
+
+---
+
+## 📂 Project Structure
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/Akashkeluth03/Portfolio.git
-
-# 2. Navigate to project root
-cd Portfolio
-
-# 3. Install dependencies
-npm install
-
-# 4. Start local development server (port 3000)
-npm run dev
-
-# 5. Build for production
-npm run build
+Portfolio/
+├── assets/
+│   └── images/
+│       ├── akash-profile.jpg       # Profile portrait
+│       ├── deepfake-audio.jpg      # AI audio spectrogram visual
+│       ├── catch-my-dream.jpg      # University platform visual
+│       ├── cloud-devops.jpg        # Kubernetes & CI/CD architecture
+│       └── ai-ml-pipeline.jpg      # Neural network research lab
+├── index.html                      # Semantic web application markup
+├── style.css                       # Cyber-Luxe styling, animations & theme
+├── script.js                       # Interactive canvas, terminal CLI, & audio visualizer
+└── README.md                       # Documentation
 ```
 
 ---
 
-## 📬 Contact & Collaborations
+## 🌐 Local Setup
 
-- **Engineer**: Akash Keluth
-- **Degree**: Information Science & Engineering, Ramaiah Institute of Technology (MSRIT)
+Clone and run instantly with any local HTTP server:
+
+```bash
+# Clone the repository
+git clone https://github.com/Akashkeluth03/Portfolio.git
+
+# Navigate into the project
+cd Portfolio
+
+# Run a local web server (Python 3)
+python3 -m http.server 8080
+
+# Open in browser
+# http://localhost:8080
+```
+
+---
+
+## 📬 Contact & Connect
+
 - **Email**: [akashkeluth03@gmail.com](mailto:akashkeluth03@gmail.com)
 - **GitHub**: [@Akashkeluth03](https://github.com/Akashkeluth03)
+- **Location**: Bangalore, Karnataka, India
+- **Institution**: Ramaiah Institute of Technology (MSRIT)
+
+---
+<div align="center">
+  <sub>© 2026 Akash Keluth. Crafted with passion & engineering precision.</sub>
+</div>
